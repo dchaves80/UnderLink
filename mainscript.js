@@ -36,12 +36,13 @@ function recaulculate()
 
     var MAX = Math.max.apply(null,valores);
     var MIN = Math.min.apply(null,valores);
-    $("#VT").text(suma.toFixed(2));
     var promedioMINMAX = (MAX + MIN) / 2;
     var BN =  (suma/valores.length) / (promedioMINMAX);
-    $("#VB").text(BN.toFixed(2));
     var klandactum = suma - suma*BN;
-    $("#VK").text(klandactum.toFixed(2));
-    var velocidadfinal = suma * (1-Math.pow(Math.E,-(klandactum)));
+    var velocidadfinal = 500 * (1-Math.pow(Math.E,-(klandactum)));
+
     $("#VF").text(velocidadfinal.toFixed(2));
+    $("#VT").text(suma.toFixed(2));
+    $("#VK").text(klandactum.toFixed(2));
+    $("#VB").text(BN.toFixed(2));
 }
