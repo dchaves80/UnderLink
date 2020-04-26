@@ -15,6 +15,13 @@ function deleteConf(row)
     recaulculate();
 }
 
+function deleteAll()
+{
+    Childrens = $("#configurationTable").find("tr");
+    Childrens.remove();
+    recaulculate();
+}
+
 function recaulculate()
 {
     Childrens = $("#configurationTable").find(".speedVal");
