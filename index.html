@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type"> <meta content="utf-8" http-equiv="encoding">
+
+
+        <link rel="stylesheet" type="text/css" href="./styles.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./mainscript.js"></script>
+    </head>
+    <body>
+        <div  class="contenedor">
+        <table>
+            <caption>HARDWARE DISPONIBLE</caption>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Velocidad (GHz)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="InsertHardware(this)"><td>1</td><td>Intel Core</td><td class="speedVal">2.33</td></tr>
+                <tr onclick="InsertHardware(this)"><td>2</td><td>Intel Core 2</td><td class="speedVal">3.33</td></tr>
+                <tr onclick="InsertHardware(this)"><td>3</td><td>Intel Core i3</td><td class="speedVal">3.7</td></tr>
+                <tr onclick="InsertHardware(this)"><td>4</td><td>Intel Core i5</td><td class="speedVal">4.2</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div  class="contenedor">
+        <table>
+            <caption>PERFORMANCE</caption>
+            <thead>
+                <tr>
+                    <th>Spec</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="ResultTable">
+                <tr><td>Vel. Total (Ghz):</td><td id="VT">-</td></tr>
+                <tr><td>Bottleneck (Ghz):</td><td id="VB">-</td></tr>
+                <tr><td>Klandactun (Ghz):</td><td id="VK">-</td></tr>
+                <tr><td>Vel. Final (Ghz):</td><td id="VF">-</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div  class="contenedor">
+        <table>
+            <caption>CONFIGURACION</caption>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Velocidad (GHz)</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="configurationTable">
+            </tbody>
+        </table>
+    </div>
+
+   
+
+    </body>
+
+
+</html>
