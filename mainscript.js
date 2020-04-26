@@ -12,6 +12,7 @@ function InsertHardware(row)
 function deleteConf(row)
 {
     $(row).remove();
+    recaulculate();
 }
 
 function recaulculate()
