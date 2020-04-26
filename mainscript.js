@@ -37,7 +37,7 @@ function recaulculate()
     var MAX = Math.max.apply(null,valores);
     var MIN = Math.min.apply(null,valores);
     var promedioMINMAX = (MAX + MIN) / 2;
-    var BN =  (suma/valores.length) / (promedioMINMAX);
+    var BN =  (promedioMINMAX) / MIN;
     var klandactum = suma - suma*BN;
     var velocidadfinal = 500 * (1-Math.pow(Math.E,-(klandactum)));
 
