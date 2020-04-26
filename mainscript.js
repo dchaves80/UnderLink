@@ -31,7 +31,7 @@ function recaulculate()
     var MIN = Math.min.apply(null,valores);
     $("#VT").text(suma.toFixed(2));
     var promedioMINMAX = (MAX + MIN) / 2;
-    var BN = (promedioMINMAX) / (suma/valores.length);
+    var BN =  (suma/valores.length) / (promedioMINMAX);
     $("#VB").text(BN.toFixed(2));
     var klandactum = suma - suma*BN;
     $("#VK").text(klandactum.toFixed(2));
