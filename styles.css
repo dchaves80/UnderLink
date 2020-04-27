@@ -20,7 +20,8 @@ table
     position: relative;
     width: 100%;
     border-collapse: collapse;
-    z-index: 3
+    z-index: 3;
+    font-size: 0.9em;
    
 }
 
@@ -70,4 +71,16 @@ tr:hover{
     width:100%;
     border-radius: 3%;
     pointer-events: all
+}
+.fail
+{
+    color:#b31212
+}
+.overclocked
+{
+    color:#12b328
+}
+.normal
+{
+    color:#1278b3
 }

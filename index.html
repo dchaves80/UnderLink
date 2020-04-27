@@ -5,6 +5,7 @@
 
         <link rel="stylesheet" type="text/css" href="./styles.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./Class.js"></script>
         <script src="./mainscript.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     </head>
@@ -15,17 +16,22 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Nombre</th>
-                    <th>Velocidad (GHz)</th>
+                    <th>Name</th>
+                    <th>Speed (GHz)</th>
+                    <th>OCT (%)</th>
                 </tr>
             </thead>
             <tbody>
-                <tr onclick="InsertHardware(this)"><td></td><td>Karu v2</td><td class="speedVal">1.00</td></tr>
-                <tr onclick="InsertHardware(this)"><td></td><td>Loshey i13</td><td class="speedVal">2.00</td></tr>
-                <tr onclick="InsertHardware(this)"><td></td><td>Intel Core</td><td class="speedVal">2.33</td></tr>
-                <tr onclick="InsertHardware(this)"><td></td><td>Intel Core 2</td><td class="speedVal">3.33</td></tr>
-                <tr onclick="InsertHardware(this)"><td></td><td>Intel Core i3</td><td class="speedVal">3.7</td></tr>
-                <tr onclick="InsertHardware(this)"><td></td><td>Intel Core i5</td><td class="speedVal">4.2</td></tr>
+                <tr onclick="InsertHardware(this)"><td>0</td><td>Karu v0.1</td><td class="speedVal">1.10</td><td class="OCT">10.0</td></tr>
+                <tr onclick="InsertHardware(this)"><td>0</td><td>Karu v0.3</td><td class="speedVal">1.13</td><td class="OCT">11.0</td></tr>
+                <tr onclick="InsertHardware(this)"><td>0</td><td>Karu v0.4</td><td class="speedVal">1.40</td><td class="OCT">12.0</td></tr>
+                <tr onclick="InsertHardware(this)"><td>0</td><td>Karu v1</td><td class="speedVal">1.80</td><td class="OCT">15.5</td></tr>
+                <tr onclick="InsertHardware(this)"><td>0</td><td>Karu v2</td><td class="speedVal">1.80</td><td class="OCT">20.0</td></tr>
+                <tr onclick="InsertHardware(this)"><td>1</td><td>Loshey i13</td><td class="speedVal">2.00</td><td class="OCT">25.0</td></tr>
+                <tr onclick="InsertHardware(this)"><td>2</td><td>Intel Core</td><td class="speedVal">2.33</td><td class="OCT">30.0</td></tr>
+                <tr onclick="InsertHardware(this)"><td>3</td><td>Intel Core 2</td><td class="speedVal">3.33</td><td class="OCT">35.0</td></tr>
+                <tr onclick="InsertHardware(this)"><td>4</td><td>Intel Core i3</td><td class="speedVal">3.7</td><td class="OCT">40.0</td></tr>
+                <tr onclick="InsertHardware(this)"><td>5</td><td>Intel Core i5</td><td class="speedVal">4.2</td><td class="OCT">46</td></tr>
             </tbody>
         </table>
     </div>
@@ -43,9 +49,6 @@
             <tbody id="ResultTable">
                 <tr><td>Borrar Todo:</td><td onclick="deleteAll()">X</td></tr>
                 <tr><td>Vel. Total (Ghz):</td><td id="VT">-</td></tr>
-                <tr><td>Bottleneck (Ghz):</td><td id="VB">-</td></tr>
-                <tr><td>Klandactun (Ghz):</td><td id="VK">-</td></tr>
-                <tr><td>Vel. Final (Ghz):</td><td id="VF">-</td></tr>
             </tbody>
         </table>
     </div>
@@ -56,9 +59,12 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Nombre</th>
-                    <th>Velocidad (GHz)</th>
-                    <th>Eliminar</th>
+                    <th>Name</th>
+                    <th>Speed</th>
+                    <th>OCT (%)</th>
+                    <th>Current Speed (GHz)</th>
+                    <th>Current OC (%)</th>
+                    <th>Delete (X)</th>
                 </tr>
             </thead>
             <tbody id="configurationTable">
