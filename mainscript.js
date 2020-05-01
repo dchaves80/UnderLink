@@ -3,6 +3,20 @@ var Childrens;
 var valores;
 var procesors;
 var promedioMINMAX;
+var size;
+
+function makeDisk(row)
+{
+    size = parseInt($(row).find(".size").text());
+    $("#selectedDisk").find("div").remove();
+
+    for(a=0;a<size;a++)
+    {
+        $("#selectedDisk").append("<div class=\"cluster\"></div>");
+    }
+
+}
+
 function InsertHardware(row)
 {
         var confrow = $(row).clone();

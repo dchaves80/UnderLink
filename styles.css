@@ -2,6 +2,29 @@
 {
     --bgcolor: #222222;
 }
+
+.cluster {
+	/* content: ""; */
+	background-color: #364466;
+	display: inline-flex;
+	width: 8px;
+	height: 10px;
+	margin: 2px;
+	/* clear: both; */
+	position: relative;
+	/* position: relative; */
+    z-index: 10000;
+    border-style: solid;
+    border-color: rgb(163, 163, 163);
+    border-width: 1px;
+}
+
+.cluster:hover
+{
+    background-color: #6489e7;
+
+}
+
 body
 {
     background-color: var(--bgcolor);
