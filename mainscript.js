@@ -76,6 +76,7 @@ function recaulculate()
             {
                 $(Rows[a]).find("#coc").text(procesors[a].COC.toFixed(2));
                 $(Rows[a]).find("#coc").attr("class","normal")
+                
             }
         }
         
